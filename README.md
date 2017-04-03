@@ -54,3 +54,6 @@ O OAuth define quatro papéis, sendo eles:
 2. Client: aplicação que irá utilizar o recurso;  
 3. Resource Server: API;  
 4. Authorization Server: API.
+
+
+## HTTP Bearer Authentication with Passport
