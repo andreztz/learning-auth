@@ -1,0 +1,37 @@
+doctype html
+html
+  head
+    title Easy Authentication with Node.js
+    
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+    
+    style.
+      body { 
+        padding-top: 20px; 
+      }
+      
+  body
+    div.container
+      div.row
+        div.col-sm-6.col-sm-offset-3
+          h1 Login
+          
+          if message.length > 0
+            div.alert.alert-danger
+              #{message}
+          
+          form(action="/login" method="post")
+            div.form-group
+              label Email
+              input.form-control(type="text", name="email")
+                
+            div.form-group
+              label Password
+              input.form-control(type="password", name="password")
+            
+            button.btn.btn-warning.btn-lg(type="submit") Login
+
+          hr
+          
+          p Need a account?
+          a(href="/signup") Signup

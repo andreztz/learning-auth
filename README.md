@@ -36,4 +36,21 @@ Em uma API do tipo REST, podemos adotar as seguintes estratégias para utilizarm
 **3.** Então, todas as endpoints da aplicação que necessitem de login, basta protegê-las, informando isso quando criar a endpoint, por exemplo `router.get('/', passport.authenticate('jwt', { session: false }), controller.index);`.
 
 
-## OAuth2
+## OAuth 2
+
+É um protocolo para autorização para API's web voltado a permitir que aplicações client acessem um recurso protegido em nome de um usuário. Ele substitui o OAuth 1. Seu foco é a simplicidade de desenvolvimento para aplicações web, desktop, mobile, etc.
+
+De uma forma resumida, ele permite uma aplicação acessar uma API no lugar do usuário, de forma segura e padronizada.
+
+> OAuth 2.0 fornece uma estrutura de autorização que permite aos usuários autorizar o acesso a aplicativos de terceiros. Quando autorizado, o aplicativo recebe um token para usar como credencial de autenticação. Isso tem dois benefícios de segurança primários:
+
+> 1. O aplicativo não precisa armazenar o nome de usuário e a senha do usuário.
+> 2. O token pode ter um escopo restrito (por exemplo: acesso somente leitura).
+
+O OAuth define quatro papéis, sendo eles:  
+
+
+1. Resource Owner: dono do recurso (Facebook, Google, Twitter);  
+2. Client: aplicação que irá utilizar o recurso;  
+3. Resource Server: API;  
+4. Authorization Server: API.

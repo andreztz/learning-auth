@@ -1,0 +1,56 @@
+doctype html
+html
+  head
+    title Easy Authentication with Node.js
+    
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+    
+    style.
+      body { 
+        padding-top: 20px; 
+      }
+      
+  body
+    div.container
+      div.page-header.text-center
+        h1 Profile Page
+        a.btn.btn-default.btn-sm(href="/logout") Logout
+
+      div.row
+        div.col-sm-6
+          div.well
+            h2 Local
+            
+            if user.local.email
+              p ID: #{user._id}
+              p E-mail: #{user.local.email}
+              
+              a.btn.btn-default(href="/unlink/local") Unlink
+            else
+              a.btn.btn-default(href="/connect/local") Connect Local
+            
+          div.well
+            h2 Facebook
+            
+            if user.facebook.token
+              p ID: #{user.facebook.id}
+              p Email: #{user.facebook.email}
+              p Token: #{user.facebook.token}
+              p Nome: #{user.facebook.name}
+              
+              a.btn.btn-default(href="/facebook/local") Unlink
+            else
+              a.btn.btn-default(href="/connect/facebook") Connect Facebook
+            
+          div.well
+            h2 Twitter
+            
+            if user.twitter.token
+              p ID: #{user.twitter.id}
+              p username: #{user.twitter.username}
+              p Token: #{user.twitter.token}
+              p Nome: #{user.twitter.displayName}
+              
+              a.btn.btn-default(href="/twitter/local") Unlink
+            else
+              a.btn.btn-default(href="/connect/twitter") Connect Twitter
