@@ -88,3 +88,19 @@ O OAuth define quatro papéis, sendo eles:
 - `passport-http-bearer`  
 - `passport-oauth2-jwt-bearer`  
 - `express-jwt`
+
+
+# Referências
+
+- [JSON Web Tokens (JWT) com Node.js - Pre NodeConf](https://www.youtube.com/watch?v=PgAO4YhOsKw)  
+- [Cookies vs Tokens - Getting auth right with Angular.JS](https://auth0.com/blog/angularjs-authentication-with-cookies-vs-token/)  
+- [10 Things You Should Know about Tokens](https://auth0.com/blog/ten-things-you-should-know-about-tokens-and-cookies/)  
+- [Easy Node Authentication: Setup and Local](https://scotch.io/tutorials/easy-node-authentication-setup-and-local)  
+- [Easy Node Authentication: Facebook](https://scotch.io/tutorials/easy-node-authentication-facebook)  
+- [Easy Node Authentication: Twitter](https://scotch.io/tutorials/easy-node-authentication-twitter)  
+- [Easy Node Authentication: Google](https://scotch.io/tutorials/easy-node-authentication-google)  
+- [Easy Node Authentication: Linking All Accounts Together](https://scotch.io/tutorials/easy-node-authentication-linking-all-accounts-together)  
+- [Upgrading Our “Easy Node Authentication” Series to ExpressJS 4.0](https://scotch.io/tutorials/upgrading-our-easy-node-authentication-series-to-expressjs-4-0)  
+- [Token based authentication in node.js using passport](https://blog.hyphe.me/token-based-authentication-with-node/)  
+- [Using refresh tokens in node.js to stay authenticated](https://blog.hyphe.me/using-refresh-tokens-for-permanent-user-sessions-in-node/)  
+- [Token based, sessionless auth using express and passport](https://jeroenpelgrims.com/token-based-sessionless-auth-using-express-and-passport)
