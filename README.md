@@ -5,6 +5,30 @@
 **Autorização** atribui papéis aos usuários, ou seja, o que ele poderá ou não fazer no sistema após estar autenticado. (ACL)
 
 
+## Cookies VS Tokens
+
+Existem duas maneiras de implementarmos um sistema de autenticação em aplicações *server-side* com um front-end e uma API:  
+
+1. Autenticação baseada em Cookies;  
+2. Autenticação baseada em Tokens.
+
+
+![Autenticação baseada em Cookies](https://raw.githubusercontent.com/ednilsonamaral/learning-auth/master/img/cookie.png)
+
+![Autenticação baseada em Tokens](https://raw.githubusercontent.com/ednilsonamaral/learning-auth/master/img/token.png)
+
+
+### Benefícios de utilizar autenticação baseada em Tokens
+
+**- CORS:** Cookies e CORS não funcionam bem em diferentes domínios. Já com Tokens, é possível trabalharmos com diferentes domínios tranquilamente, em qualquer requisição, pois usamos o cabeçalho HTTP para transmitir as informações do usuário.  
+**-Stateless (escabilidade do servidor)** não há necessidade de mantermos armazenado em sessões, já que o token é uma entidade auto-contida que tranmite todas as informações do usuário.  
+**-CDN:** podemos ter todos os *assets* da nossa aplicação em um servidor diferente da API.  
+**-Decoupling (dissociação):**  não ficamos limitados a um *Schema* específico de autenticação, pois o token pode ser gerado de qualquer lugar.  
+**-Mobile Apps:**  trabalhar com cookies em plataformas nativas (iOS / Android) não é um método seguro para consumir uma API, pois temos que lidar com vários *cookies containers**. Já adotar o token em mobile apps, facilita muito o nosso trabalho.  
+**-Performance**  
+**-Baseado em padrões:** nossa API pode aceitar como padrão JWT (Json Web Token). Esse é um padrão utilizado por grandes empresas de Tech e existem inúmeras libs para utilizarmos no back-end.
+
+
 ## JWT - Json Web Token
 
 > JWT (JSON Web Tokens) é uma estratégia de autenticação para APIs em REST simples e segura. Trata-se de um padrão aberto para autenticações web e é totalmente baseada em requests JSON entre o cliente e servidor.
@@ -56,4 +80,10 @@ O OAuth define quatro papéis, sendo eles:
 4. Authorization Server: API.
 
 
-## HTTP Bearer Authentication with Passport
+## HTTP Bearer Authentication com Passport `passport-http-bearer`
+
+É uma estratégia de autenticação do Passport, para HTTP Bearer. Esse módulo nos permite autenticar solicitações HTTP usando tokens de **Bearer**, conforme especificação RFC 6750. São utilizadas para proteger endpoints de uma API, e oferece suporte para utilizarmos juntamente com OAuth 2.0.
+
+
+- passport-http-bearer  
+- passport-oauth2-jwt-bearer
