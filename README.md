@@ -80,10 +80,11 @@ O OAuth define quatro papéis, sendo eles:
 4. Authorization Server: API.
 
 
-## HTTP Bearer Authentication com Passport `passport-http-bearer`
+## HTTP Bearer Authentication com Passport
 
 É uma estratégia de autenticação do Passport, para HTTP Bearer. Esse módulo nos permite autenticar solicitações HTTP usando tokens de **Bearer**, conforme especificação RFC 6750. São utilizadas para proteger endpoints de uma API, e oferece suporte para utilizarmos juntamente com OAuth 2.0.
 
 
-- passport-http-bearer  
-- passport-oauth2-jwt-bearer
+- `passport-http-bearer`  
+- `passport-oauth2-jwt-bearer`  
+- `express-jwt`
