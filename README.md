@@ -87,7 +87,8 @@ O OAuth define quatro papéis, sendo eles:
 
 - `passport-http-bearer`  
 - `passport-oauth2-jwt-bearer`  
-- `express-jwt`
+- `express-jwt`  
+- auth0
 
 
 # Referências
